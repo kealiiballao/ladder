@@ -1,16 +1,24 @@
 {
-  "name": "circleCalc",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ladder",
+  "version": "1.0.1",
+  "description": "Code calculates area and circumference of a circle Solution code from ICS 385 Spring 2020 Exam 1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kealii Ballao",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kealiiballao/ladder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kealiiballao/ladder/issues"
+  },
+  "homepage": "https://github.com/kealiiballao/ladder#readme"
 }
