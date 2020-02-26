@@ -9,14 +9,12 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res){
   var heightWall = parseFloat(req.body.height);
   var depthWall = parseFloat(req.body.depth);
-  var lengthWall = (Math.sqrt(Math.pow(depthWall, 2) + Math.pow(heightWall, 2))).toFixed(2);
+  var lengthWall = parseFloat((Math.sqrt(Math.pow(depthWall, 2) + Math.pow(heightWall, 2))).toFixed(2));
   var typeOfHeightWall = typeof(heightWall);
   var typeOfDepthWall = typeof(depthWall);
   var typeOfLengthWall = typeof(lengthWall);
-  res.send("<strong>lenghtWall: </strong>"+lengthWall+"("+typeOfLengthWall+")"+ ". <strong>heightWall variable type: </strong>"+typeOfHeightWall+". depthWall variable type: "+typeOfDepthWall);
-
-
+  res.send("<!DOCTYPE html><html><head><title>Results</title></head><body><div><p><strong>Ladder Length: </strong>"+lengthWall+"("+typeOfLengthWall+")</p>"+ "<p><strong>heightWall variable type: </strong>"+typeOfHeightWall+"</p><p><strong>depthWall variable type: </strong>"+typeOfDepthWall+"</p><button>BACK</button></div></body></html>");
 })
 app.listen(3000, function() {
-console.log ("Server is running on port 3000")
+  console.log ("Server is running on port 3000")
 });
