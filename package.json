@@ -1,7 +1,7 @@
 {
   "name": "ladder",
   "version": "1.0.1",
-  "description": "Code calculates area and circumference of a circle Solution code from ICS 385 Spring 2020 Exam 1",
+  "description": "Code based on circleCalc to find length of ladder with height and depth inputs on from",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
